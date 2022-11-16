@@ -5,6 +5,7 @@
 <br>
 
 **HTTP 메시지 예시**
+
 HTTP 메시지는 시작줄, 헤더, 본문으로 구성된다.
 ```
 GET https://www.naver.com HTTP/1.1
