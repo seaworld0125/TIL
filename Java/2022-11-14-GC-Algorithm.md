@@ -20,7 +20,7 @@ Old 영역은 기본적으로 데이터가 가득 차면 GC를 수행한다. GC 
 
 기본적인 알고리즘은 같기 때문에 ```Mark-Sweep-Compact``` 알고리즘을 이용한다.
 
-![parrallel-gc](./../img/parrallel-gc.png)
+![parrallel-gc](./../Img/parrallel-gc.png)
 
 <br>
 
@@ -32,7 +32,7 @@ G1GC에도 Eden, Survivor, Old 영역이 존재하지만, 해당 영역은 고�
 
 G1GC의 특징은 아래와 같다.
 
-![g1gc](./../img/g1gc.png)
+![g1gc](./../Img/g1gc.png)
 
 - **Humonogous**: Region 크기의 50%를 초과하는 큰 객체를 저장하기 위한 공간
 - **Available/Unused**: 아직 사용되지 않은 Region
@@ -76,7 +76,7 @@ G1GC는 크게 두 가지 페이즈를 반복한다.
 - ```young-only 페이즈```: 현재 사용 가능한 메모리를 old generation으로 점차 채우는 작업을 수행한다. 
 - ```space-reclamation 페이즈```: young generation과 old generation을 회수하는 작업을 수행한다.
 
-![g1-phases](./../img/g1gc-cycle.png)
+![g1-phases](./../Img/g1gc-cycle.png)
 
 더 자세히 알아보자.
 1. ```Young-only phase```: 이 페이즈는 young 객체들을 old 객체로 전환하면서 시작된다. 만약 old 객체의 비율이 특정 임계값을 넘어가게 되면, young-only 페이즈에서 space-reclamation 페이즈로 전환된다. 이때 G1은 initial Mark 라는 동작을 수행한다. 즉, 아래의 세 가지 과정은 페이즈가 전환되기 위해 거쳐야 하는 일련의 절차라고 볼 수 있다.

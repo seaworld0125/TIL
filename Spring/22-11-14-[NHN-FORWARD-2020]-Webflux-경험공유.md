@@ -46,11 +46,11 @@ log()를 제거해서 해결하였음
 
 ### 성능 측정을 하면서 느낀점
 ---
-![webflux](./../img/webflux-성능측정.png)
+![webflux](./../Img/webflux-성능측정.png)
 
 1. 죄측 그래프를 보면 하단이 살짝 떠 있는 것을 볼 수 있는데, WebFlux로 개발했음에도 불구하고 Blocking이 발생하고 있다는 것을 의미한다. 문제점을 해결한 뒤 우측 그래프로 개선된 것을 볼 수 있다.
 
-![webflux2](./../img/webflux-성능측정2.png)
+![webflux2](./../Img/webflux-성능측정2.png)
 
 1. Redis Client인 Lettuce는 Lazy 커넥션을 이용한다고 한다. 따라서 초반에 Redis와 커넥션을 맺는 시간이 필요하기 때문에 좌측 상단과 같은 현상이 나타났다.
 
@@ -75,7 +75,7 @@ log()를 제거해서 해결하였음
     - 따라서 커맨드를 실행할 때마다 ping command를 동기식으로 실행하여 연결 상태를 검증한다.
     - 성능 이슈의 원인이 될 수 있다.
 
-![lettuce-setting](../img/lettuce-validateConnection.png)
+![lettuce-setting](../Img/lettuce-validateConnection.png)
 
 <br>
 
@@ -87,6 +87,6 @@ log()를 제거해서 해결하였음
       - publishOn()은 다음 메서드 체인을 별도의 스레드 풀에서 실행할 수 있도록 해준다.
       - subscribeOn()은 전체 메서드 체인을 하나의 스레드 풀에서 실행한다.
 
-![publishOn](./../img/publishOn.png)
+![publishOn](./../Img/publishOn.png)
 
 publishOn()의 인수로 별도 스레드 풀을 전달하는 모습 
