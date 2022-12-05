@@ -3,3 +3,5 @@
 [인프런-김영한 | 실전! Querydsl](https://www.inflearn.com/course/querydsl-%EC%8B%A4%EC%A0%84/dashboard)
 
 입니다.
+
+[실습 Repository로 이동](https://github.com/seaworld0125/querydsl-study)
