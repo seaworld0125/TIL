@@ -102,3 +102,12 @@ static final class TreeNode<K,V> extends LinkedHashMap.Entry<K,V> {
 결국 treeifyBin()에서는 연결리스트를 구성하고 있는 노드들을 TreeNode 객체로 변환하는 작업을 수행하고, 관리 형태를 Red-Black-Tree로 전환한다고 볼 수 있다.
 
 Red-Black-Tree는 탐색 시간 복잡도가 O(log n)이기 때문에 기존의 연결리스트 방식 보다는 더 효율적으로 해시 충돌을 관리할 수 있다.
+
+<br>
+
+### Ref
+---
+https://lordofkangs.tistory.com/78
+
+https://www.youtube.com/watch?time_continue=3&v=SHdYv41iCmE&feature=emb_title
+
