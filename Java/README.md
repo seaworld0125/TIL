@@ -2,7 +2,8 @@
 ---
 탑-다운 방식으로 개념을 정리하고 학습한다. 
 
-1. [equals() vs hashcode()](https://github.com/seaworld0125/TIL/blob/main/Java/2022-12-12-equals-vs-hashcode.md)
+1. [GC algorithm](https://github.com/seaworld0125/TIL/blob/main/Java/2022-11-14-GC-Algorithm.md)
+2. [equals() vs hashcode()](https://github.com/seaworld0125/TIL/blob/main/Java/2022-12-12-equals-vs-hashcode.md)
 
 <br>
 
